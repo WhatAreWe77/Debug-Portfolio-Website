@@ -1,0 +1,65 @@
+/* Basic styles with errors and omissions */
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    /* Missing: proper alignment */
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Navigation styling missing completely */
+
+.hero {
+    padding: 50px;
+    background-color: lightblue;
+    /* Poor colour contrast */
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero img {
+    width: 100%;
+    /* Missing: alt text handled in HTML, but sizing issues here */
+}
+
+/* Missing: Only using 2-3 selector types, need 5+ */
+/* Missing: Pseudo-classes not used */
+/* Missing: Combination selectors not used */
+
+.intro {
+    padding: 30px;
+}
+
+/* Form styling incomplete */
+form input {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Missing: Box model demonstration (margin, padding, border) */
+/* Missing: Block vs inline elements styling */
+/* Missing: Text and colour styling variety */
+/* Missing: Table styling */
+
+.footer {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    /* Wrong alignment */
+    text-align: left;
+}
+
+/* Code quality issues: inconsistent spacing, poor naming, no comments */

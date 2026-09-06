@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tshepo Marvin Sekobile - Software Engineer</title>
+    <meta name="description" content="Aspiring software engineering studying Meta Front-End and Back-End Development on Coursera. Building real projects with HTML, CSS and Javascript" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>My Portfolio</h1>
-        <!-- Navigation missing -->
-    </div>
-    
+    <header id="top">
+        <nav class="topnav">
+            <div class="nav-logo">TMS</div>
+            <ul class="nav-links">
+                <li><a href="#index" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="burger" id="burger" aria-label="Open menu">&#9776; Menu</button>
+        </nav>
+
     <div class="hero">
-        <h2>Welcome to My Portfolio</h2>
+        <div class="hero-badge">Available for internships &amp; junior roles</div>
+        <h1 class="hero-name">Tshepo Marvin<br><span class="hero-surname">Sekobile</span></h1>
+        <p class="hero-role">Aspiring Software Engineer</p>
+        <p class="hero-sub">Studying<strong> Meta Front-End</strong> &amp; <strong>Meta Back-End Development</strong> on Coursera &mdash; building real skills, one project at a time.</p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">See My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
         <p>I am a web developer passionate about creating beautiful websites.</p>
-        <img src="images/hero.jpg">
+        <img src="images/hero.jpg" alt = "Hero Image">
     </div>
-    
+    </header>
+
     <div class="intro">
         <h2>About Me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

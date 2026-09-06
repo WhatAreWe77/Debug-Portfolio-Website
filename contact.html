@@ -40,8 +40,11 @@
                     <span class="error-message" id="nameError"></span>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                    <label>Preffered Contact Method</label>
+                    <input type="radio" id="emailContact" name="contactMethod" value="email" placeholder="Your email" required>
+                    <label for="emailContact">Email</label>
+                    <input type="radio" id="phoneContact" name="contactMethod" value="phone" placeholder="Your phone number" required>
+                    <label for="phoneContact">Phone</label>
                     <span class="error-message" id="emailError"></span>
                 </div>
                 <div class="form-group">

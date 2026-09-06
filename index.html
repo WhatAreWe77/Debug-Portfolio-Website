@@ -12,11 +12,11 @@
         <nav class="topnav">
             <div class="nav-logo">TMS</div>
             <ul class="nav-links">
-                <li><a href="#index" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#courses" class="nav-link">Courses</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="about.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <button class="burger" id="burger" aria-label="Open menu">&#9776; Menu</button>
         </nav>
@@ -31,7 +31,8 @@
             <a href="#contact" class="btn btn-secondary">Get In Touch</a>
         </div>
         <p>I am a web developer passionate about creating beautiful websites.</p>
-        <img src="images/hero.jpg" alt = "Hero Image">
+        <img src="images/hero.jpg" alt="Hero Image" onerror="this.hidden = true; this.nextElementSibling.hidden = false;">
+        <p class="image-placeholder" hidden>Hero image coming soon.</p>
     </div>
     </header>
 
@@ -39,7 +40,7 @@
         <h2>About Me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    
+
     <div class="footer">
         <p>Contact me at email@example.com</p>
     </div>

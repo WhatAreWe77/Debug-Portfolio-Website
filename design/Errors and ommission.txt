@@ -1,0 +1,50 @@
+Errors and Ommissions - Complete-Website Capstone (Others included in the README. file)
+
+about.html file
+
+#Error
+1.Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.
+ 	From line 1, column 16: to line 2,column 6
+2.The character encoding was not declared.Proceeding using windows-1252.
+3.An img element must have an alt attribute, except under certain conditions.
+	From line 23, column 9; to line 23, column 38.
+4.Missing email link, the image footer is in plain text.
+5.Missing semantic HTML5 elements.
+
+contact.html file
+
+#Error
+1.Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.
+	From line 1, column 16; to line 2, column 6
+2.The character encoding was not declared. Proceeding using windows-1252.
+3.Wrong input type for email, should be “type=email”
+4.Missing “name” attributes on form inputs.
+5.Missing “id” and “for” attributes.
+6.Missing “action” and “method” attributes, <form> tag does not specify where or how to submit.
+7.Missing submit button type on line 22.
+8.Missing email link in footer.
+9.Missing  ARIA labels for better accessiblity.
+
+index.html file
+
+#Error
+1.Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.
+ 	From line 1, column 16: to line 2,column 6
+2.The character encoding was not declared. Proceeding using windows-1252.
+3.An img element must have an alt attribute, except under certain conditions.
+	From line 16, column 9; to line 16, column 35.
+4.Missing email link in footer.
+5.Missing semantic HTML5 elements.
+6.Nav bar missing.
+
+
+projects.html file
+
+#Error
+1.The character encoding was not declared. Proceeding using windows-1252.
+2.An img element must have an alt attribute, except under certain conditions.
+	From line 14, column 9; to line 14, column 39.
+3.An img element must have an alt attribute, except under certain conditions.
+	From line 20, column 9; to line 20, column 39.
+4.Missing structured data.
+5.Missing “ARIA” labels.

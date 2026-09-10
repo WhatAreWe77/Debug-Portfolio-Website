@@ -324,6 +324,22 @@ header::before {
   margin-bottom: 44px;
 }
 
+.projects-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 32px;
+  align-items: start;
+}
+
+.projects-heading-image {
+  width: 220px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  justify-self: end;
+  opacity: 0.86;
+  mix-blend-mode: screen;
+}
+
 /* ── ABOUT ── */
 .about-grid {
   display: grid;
@@ -725,6 +741,8 @@ footer {
     .burger { display: block; }
     .about-grid, .contact-wrap { grid-template-columns: 1fr; }
     .contact-image { max-width: 190px; }
+    .projects-heading { grid-template-columns: 1fr; }
+    .projects-heading-image { justify-self: start; }
     .hero {
         grid-template-columns: 1fr;
         gap: 36px;

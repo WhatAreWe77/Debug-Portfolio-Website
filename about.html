@@ -1,127 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> About Me </title>
-    <meta name="description" content="Aspiring Software engineer studying Meta Front-End and Back-End
-     Development on Coursera. Building real projects with HTML, CSS, JavaScript and React" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>About</title>
-</head>
-<body>
-      <header id="top">
-        <nav class="topnav">
-            <div class="nav-logo">TMS</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="about.html#skills" class="nav-link">Skills</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>About Me</title>
+    <meta
+      name="description"
+      content="Aspiring Software engineer studying Meta Front-End and Back-End
+     Development on Coursera. Building real projects with HTML, CSS, JavaScript and React"
+    >
+    <link rel="stylesheet" href="css/styles.css" >
+  </head>
+  <body>
+    <header id="top">
+      <nav class="topnav">
+        <span class="nav-logo">TMS</span>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="about.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-    <section id="about" class="section">
-        <div class="section-inner about-grid">
-            <div class="about-img-col">
-                <img src="images/IMG_9616.jpeg" alt="Profile Picture" class="avatar-photo" onerror="this.hidden = true; this.nextElementSibling.hidden = false;" />
-            </div>
+      <section id="about" class="section">
+        <section class="section-inner about-grid">
+          <aside class="about-img-col">
+            <img
+              src="images/IMG_9616.jpeg"
+              alt="Tshepo Sekobile's portrait"
+              class="avatar-photo"
+            >
+          </aside>
 
-        <div class="about-text-col">
+          <article class="about-text-col">
             <span class="eyebrow">About Me</span>
             <h2>My Background</h2>
-            <p>I'm Tshepo Marvin Sekobile, a self-driven beginener software engineer from Winburg,Free State.
-                I discovered my passion for programming through Coursera's Meta ceretification programmes and
-                I have not looked back since.</p>
-            <p>I believe great software is bulitb the same way great habits are - consistently, one line at a time.
-                Right now I;m focused on mastering the fundamentals of the web: HTML. CSS, JavaScript and React.</p>
-            <p>My goal is to become a full-stack software engineer and contribute to building innovative solutions.</p>
-            <div class="about-cards">
-                <div class="acard">
-                    <span class="acard-icon">&#127891;</span>
-                    <span class="acard-label">Front-End &amp;<br>Back-End</span>
-                    </div>
-                <div class="acard">
-                    <span class="acard-icon">&#128200; </span>
-                    <span class="acard-label">Growing<br>Every Day</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
+            <p>
+              I'm Tshepo Marvin Sekobile, a self-driven beginner software
+              engineer from Winburg,Free State. I discovered my passion for
+              programming through Coursera's Meta certification programmes and I
+              have not looked back since.
+            </p>
+            <p>
+              I believe great software is built the same way great habits are -
+              consistently, one line at a time. Right now I'm focused on
+              mastering the fundamentals of the web: HTML, CSS, JavaScript and
+              React.
+            </p>
+            <p>
+              My goal is to become a full-stack software engineer and contribute
+              to building innovative solutions.
+            </p>
+            <section class="about-cards">
+              <article class="acard">
+                <span class="acard-icon">&#127891;</span>
+                <span class="acard-label">Front-End &amp;<br />Back-End</span>
+              </article>
+              <article class="acard">
+                <span class="acard-icon">&#128200; </span>
+                <span class="acard-label">Growing<br />Every Day</span>
+              </article>
+            </section>
+          </article>
+        </section>
+      </section>
 
-<!--Skills section-->
+      <!--Skills section-->
 
-    <section id="skills" class="section">
-    <div class="section-inner">
-        <span class="eyebrow">What I Know So Far</span>
-        <h2 class="section-title">Skills</h2>
-        <p class="section-sub">
-            Honest, self-assessed skill levels based on my Coursera progress and hands-on projects.
-        </p>
+      <section id="skills" class="section">
+        <section class="section-inner">
+          <span class="eyebrow">What I Know So Far</span>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-sub">
+            Honest, self-assessed skill levels based on my Coursera progress and
+            hands-on projects.
+          </p>
 
-        <table class="skills-table">
+          <table class="skills-table">
             <thead>
-                <tr>
-                    <th>Skill</th>
-                    <th>Percentage</th>
-                    <th>Information</th>
-                </tr>
+              <tr>
+                <th>Skill</th>
+                <th>Percentage</th>
+                <th>Information</th>
+              </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>HTML &amp; CSS</td>
-                    <td>88%</td>
-                    <td>Semantic HTML, Flexbox, Grid and responsive layouts</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>80%</td>
-                    <td>ES6 basics, DOM manipulation, functions, arrays and events</td>
-                </tr>
-                <tr>
-                    <td>Git &amp; GitHub</td>
-                    <td>90%</td>
-                    <td>Commits, branches, pull requests and version control</td>
-                </tr>
-                <tr>
-                    <td>React</td>
-                    <td>81%</td>
-                    <td>Components, props, useState, hooks and routing</td>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>80%</td>
-                    <td>Data types, loops, functions, OOP and file handling</td>
-                </tr>
-                <tr>
-                    <td>Problem Solving</td>
-                    <td>87%</td>
-                    <td>Algorithmic thinking, debugging and logical reasoning</td>
-                </tr>
+              <tr>
+                <td>HTML &amp; CSS</td>
+                <td>88%</td>
+                <td>Semantic HTML, Flexbox, Grid and responsive layouts</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>80%</td>
+                <td>
+                  ES6 basics, DOM manipulation, functions, arrays and events
+                </td>
+              </tr>
+              <tr>
+                <td>Git &amp; GitHub</td>
+                <td>90%</td>
+                <td>Commits, branches, pull requests and version control</td>
+              </tr>
+              <tr>
+                <td>React</td>
+                <td>81%</td>
+                <td>Components, props, useState, hooks and routing</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>80%</td>
+                <td>Data types, loops, functions, OOP and file handling</td>
+              </tr>
+              <tr>
+                <td>Problem Solving</td>
+                <td>87%</td>
+                <td>Algorithmic thinking, debugging and logical reasoning</td>
+              </tr>
             </tbody>
-        </table>
-    </div>
-</section>
-
-    <br>
+          </table>
+        </section>
+      </section>
     </main>
 
     <footer>
-     <div class="footer-inner">
-         <div class="footer-brand">
-            <div class="nav-logo">T · M · S</div>
-            <div>
-                <p class="footer-name">Tshepo Marvin Sekobile</p>
-                <p class="footer-role">Aspiring Software Engineer · Winburg</p>
-            </div>
-                <p class="footer-copy">
-                    &#169; 2026 · Built with HTML, CSS &amp; JavaScript. All rights reserved.
-                </p>
-         </div>
-     </div>
-</footer>
-</body>
+      <section class="footer-inner">
+        <section class="footer-brand">
+          <span class="nav-logo">T · M · S</span>
+          <section>
+            <p class="footer-name">Tshepo Marvin Sekobile</p>
+            <p class="footer-role">Aspiring Software Engineer · Winburg</p>
+          </section>
+          <p class="footer-copy">
+            &#169; 2026 · Built with HTML, CSS &amp; JavaScript. All rights
+            reserved.
+          </p>
+        </section>
+      </section>
+    </footer>
+  </body>
 </html>

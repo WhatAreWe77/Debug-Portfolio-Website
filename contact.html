@@ -1,100 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Contact</title>
-    <meta name="description" content="Get in touch with me for inquiries, collaborations, or just to say hello.">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-      <header id="top">
-        <nav class="topnav">
-            <div class="nav-logo">TMS</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="about.html#skills" class="nav-link">Skills</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+    <meta
+      name="description"
+      content="Get in touch with me for inquiries, collaborations, or just to say hello."
+    >
+    <link rel="stylesheet" href="css/styles.css" >
+  </head>
+  <body>
+    <header id="top">
+      <nav class="topnav">
+        <span class="nav-logo">TMS</span>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="about.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-    <section id="contact" class="section">
-        <div class="section-inner contact-wrap">
-            <div class="contact-intro">
-                <div class="contact-left">
-                    <span class="eyebrow">Let's Connect</span>
-                    <h2>Open to opportunities</h2>
-                    <p>I'm looking for interships, junior developer roles, or even just a coding mentor. If you're building something interesting or have advice for a beginner dev, I'd love to hear from you.</p>
-                    <ul class="contact-facts">
-                        <li><span class="cf-icon">&#128205;</span> Winburg, Free State, South Africa</li>
-                        <li><span class="cf-icon">&#127891;</span> Meta Front-End &amp; Back-End· Coursera</li>
-                        <li><span class="cf-icon">&#9989;</span> Available for junior &amp; internship roles</li>
-                        <li><span class="cf-icon">&#128172;</span>English · Sesotho </li>
-                    </ul>
-                    <img class="contact-image" src="images/contact-us.jpg" alt="Contact Tshepo Sekobile">
-                    <img class="working-image" src="images/working-image.jpg" alt="Dev on call">
-                </div>
-            </div>
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required>
-                    <span class="error-message" id="nameError"></span>
-                </div>
+      <section id="contact" class="section">
+        <section class="section-inner contact-wrap">
+          <article class="contact-intro">
+            <section class="contact-left">
+              <span class="eyebrow">Let's Connect</span>
+              <h2>Open to opportunities</h2>
+              <p>
+                I'm looking for internships, junior developer roles, or even
+                just a coding mentor. If you're building something interesting
+                or have advice for a beginner dev, I'd love to hear from you.
+              </p>
+              <ul class="contact-facts">
+                <li>
+                  <span class="cf-icon">&#128205;</span> Winburg, Free State,
+                  South Africa
+                </li>
+                <li>
+                  <span class="cf-icon">&#127891;</span> Meta Front-End &amp;
+                  Back-End· Coursera
+                </li>
+                <li>
+                  <span class="cf-icon">&#9989;</span> Available for junior
+                  &amp; internship roles
+                </li>
+                <li><span class="cf-icon">&#128172;</span>English · Sesotho</li>
+              </ul>
+              <img
+                class="contact-image"
+                src="images/contact-us.jpg"
+                alt="Contact Tshepo Sekobile"
+              >
+              <img
+                class="working-image"
+                src="images/working-image.jpg"
+                alt="Dev on call"
+              >
+            </section>
+          </article>
+          <form class="contact-form" id="contactForm">
+            <fieldset class="form-group">
+              <legend class="sr-only">Name</legend>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              >
+              <span class="ferr" id="nameError"></span>
+            </fieldset>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your email" required>
-                    <span class="error-message" id="emailError"></span>
-                </div>
-                <div class="form-group">
-                    <label>Preffered Contact Method</label>
-                    <input type="radio" id="emailContact" name="contactMethod" value="email" placeholder="Your email" required>
-                    <label for="emailContact">Email</label>
-                    <input type="radio" id="phoneContact" name="contactMethod" value="phone" placeholder="Your phone number" required>
-                    <label for="phoneContact">Phone</label>
-                    <span class="error-message" id="emailError"></span>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <select id="subject" name="subject" required>
-                        <option value="">Select a subject</option>
-                        <option value="job">Job / Internship opportunity</option>
-                        <option value="collaboration">Collaboration</option>
-                        <option value="mentorship">Mentorship offer</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <span class="ferr" id="subjectErr"></span>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="What's on your mind?" rows="5" minlength = "20" required></textarea>
-                    <span class="error-message" id="messageError"></span>
-                </div>
-                <button type="submit" class="btn-primary" id="submitBtn">Send Message</button>
-                <p class="form-success" id="formSuccess">&#10003; Message sent! Ill reply as soon as possible.</p>
-                </form>
-        </div>
-    </section>
-    <br>
+            <fieldset class="form-group">
+              <legend class="sr-only">Email</legend>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+                required
+              >
+              <span class="ferr" id="emailError"></span>
+            </fieldset>
+            <fieldset class="form-group">
+              <legend class="sr-only">Preferred Contact Method</legend>
+              <label>Preferred Contact Method</label>
+              <input
+                type="radio"
+                id="emailContact"
+                name="contactMethod"
+                value="email"
+                required
+              >
+              <label for="emailContact">Email</label>
+              <input
+                type="radio"
+                id="phoneContact"
+                name="contactMethod"
+                value="phone"
+                required
+              >
+              <label for="phoneContact">Phone</label>
+            </fieldset>
+            <fieldset class="form-group">
+              <legend class="sr-only">Subject</legend>
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="job">Job / Internship opportunity</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="mentorship">Mentorship offer</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="ferr" id="subjectErr"></span>
+            </fieldset>
+            <fieldset class="form-group">
+              <legend class="sr-only">Message</legend>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="What's on your mind?"
+                rows="5"
+                minlength="20"
+                required
+              ></textarea>
+              <span class="ferr" id="messageError"></span>
+            </fieldset>
+            <button type="submit" class="btn-primary" id="submitBtn">
+              Send Message
+            </button>
+          </form>
+        </section>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-inner">
-            <div class="footer-brand">
-                <div class="nav-logo">T · M · S</div>
-                <div>
-                    <p class="footer-name">Tshepo Marvin Sekobile</p>
-                    <p class="footer-role">Aspiring Software Engineer · Winburg</p>
-                </div>
-                <p class="footer-copy">
-                    &#169; 2026 · Built with HTML, CSS &amp; JavaScript. All rights reserved.
-                </p>
-            </div>
-        </div>
+      <section class="footer-inner">
+        <section class="footer-brand">
+          <span class="nav-logo">T · M · S</span>
+          <section>
+            <p class="footer-name">Tshepo Marvin Sekobile</p>
+            <p class="footer-role">Aspiring Software Engineer · Winburg</p>
+          </section>
+          <p class="footer-copy">
+            &#169; 2026 · Built with HTML, CSS &amp; JavaScript. All rights
+            reserved.
+          </p>
+        </section>
+      </section>
     </footer>
-</body>
+  </body>
 </html>

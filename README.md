@@ -1,36 +1,50 @@
-# Portfolio Website Starter Code
+# Tshepo Marvin Sekobile | Portfolio
 
-This is the starter codebase for your portfolio website project. The code is approximately 70% complete but contains errors, omissions, and areas that need improvement.
+## Overview
 
-## What's Included
+This responsive portfolio presents Tshepo Marvin Sekobile's background, skills, projects, and contact details. It is a static HTML and CSS website designed to demonstrate semantic structure, responsive layouts, accessible form controls, and practical front-end styling.
 
-- `index.html` - Home page (incomplete)
-- `about.html` - About page (incomplete)
-- `projects.html` - Projects page (incomplete)
-- `contact.html` - Contact page (incomplete)
-- `css/styles.css` - Stylesheet (incomplete and with errors)
-- `images/` folder - Placeholder folder for your images
+## Issues Found
 
-## Your Task
+The starter code contained incomplete styling, incorrect or inconsistent markup, excessive page spacing, missing image placement, weak mobile behavior, duplicate CSS declarations, low-contrast text, a misspelled Projects section class, and form fieldsets without legends. Navigation links also did not initially jump directly to the Skills table.
 
-Review the provided code carefully and:
-1. Identify and fix all errors
-2. Complete all missing requirements
-3. Improve the code quality
-4. Test your website thoroughly
+## Fixes Implemented
 
-## Getting Started
+- Built a two-column index hero with a responsive portrait image.
+- Removed unnecessary full-height spacing from inner pages and added a sticky footer layout.
+- Added project and contact imagery with responsive sizing and blended presentation.
+- Corrected navigation targets, responsive breakpoints, table zebra striping, and text contrast.
+- Added form legends, labels, required validation, radio choices, a select menu, and a message textarea.
+- Removed duplicate CSS rules and corrected the `seection` typo.
 
-1. Review all HTML and CSS files
-2. Run your HTML through the W3C Validator
-3. Run your CSS through the W3C CSS Validator
-4. Test your website in multiple browsers
-5. Fix issues and complete missing elements
+## HTML Structure
 
-## Notes
+Each page uses `header`, `nav`, `main`, `section`, `article`, `aside`, `figure`, `form`, `fieldset`, and `footer` elements according to purpose. The About page contains the profile and Skills table; Projects uses semantic project articles; Contact uses labeled fieldsets; and the index contains the hero and calls to action.
 
-- You will need to add your own images to the `images/` folder
-- The starter code intentionally has issues for you to discover and fix
-- Refer to the project requirements document for all specifications
+## CSS Approach
 
-Good luck!
+`styles.css` uses custom properties for colors, spacing-related values, borders, and radii. CSS Grid controls hero, About, Projects, and Contact layouts; Flexbox handles navigation, buttons, cards, and footer content. Reusable selectors style buttons, cards, forms, tables, images, hover states, and the `@media (max-width: 760px)` responsive layout.
+
+## Accessibility
+
+Images have descriptive `alt` text. Form controls have associated labels, required validation, helpful input types, and visually hidden legends for fieldsets. Semantic landmarks improve navigation, table headings identify columns, and color contrast was improved for muted text.
+
+## View Locally
+
+Open `index.html` directly in a browser, or run a local server from the project folder:
+
+## Screenshots
+
+Available page captures are stored in [`screenshot`](screenshot/):
+
+- [Home](screenshots/homepage-before.png)
+- [Home](screenshots/homepage-after.png)
+- [About and Skills](screenshots/about-before.png)
+- [Contact and form](screenshot/form-before.png)
+- [Projects](screenshot/projects-before.png)
+
+The Contact capture documents the form, the About capture documents the Skills table, and the page captures provide navigation/page-state evidence. Hover states are implemented in CSS through selectors such as `.nav-link:hover`, `.btn-primary:hover`, and `.project-card:hover`. The supplied captures also provide a before/after reference against the starter layout.
+
+## Reflection
+
+The main challenge was tracing shared CSS behavior across four pages while preserving the intended design. I solved this by locating the owning selectors, making small scoped changes, checking HTML/CSS diagnostics after edits, and using `git diff --check` to catch formatting issues. Semantic replacements and reusable CSS rules reduced duplication while keeping the pages consistent.

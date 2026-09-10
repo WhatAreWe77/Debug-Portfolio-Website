@@ -7,9 +7,7 @@
     <meta name="description" content="Aspiring Software engineer studying Meta Front-End and Back-End
      Development on Coursera. Building real projects with HTML, CSS, JavaScript and React" />
     <link rel="stylesheet" href="styles.css" />
-    </head>
     <title>About</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
       <header id="top">
@@ -18,20 +16,19 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="about.html" class="nav-link">Skills</a></li>
+                <li><a href="about.html#skills" class="nav-link">Skills</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
+    </header>
     <main>
     <section id="about" class="section">
-        <div class=""section-inner about-grid">
+        <div class="section-inner about-grid">
             <div class="about-img-col">
-                <img src="Img_1221.jpeg" alt="Profile Picture" class="avatar-photo" onerror="this.hidden = true; this.nextElementSibling.hidden = false;" />
-                <p class="image-placeholder" hidden>Profile image coming soon.</p>
+                <img src="images/IMG_9616.jpeg" alt="Profile Picture" class="avatar-photo" onerror="this.hidden = true; this.nextElementSibling.hidden = false;" />
             </div>
-            <div class="location-chip">&#127466;&#127462; Winburg, Free State, South Africa</div>
-        </div>
+
         <div class="about-text-col">
             <span class="eyebrow">About Me</span>
             <h2>My Background</h2>
@@ -44,7 +41,7 @@
             <div class="about-cards">
                 <div class="acard">
                     <span class="acard-icon">&#127891;</span>
-                    <span class="acard-label">Front-End &amp;<br>Back-End Track</span>
+                    <span class="acard-label">Front-End &amp;<br>Back-End</span>
                     </div>
                 <div class="acard">
                     <span class="acard-icon">&#128200; </span>
@@ -58,88 +55,73 @@
 <!--Skills section-->
 
     <section id="skills" class="section">
-        <div class="section-inner">
-            <span class="eyebrow">What I know So Far</span>
-            <h2 class="section-title">Skills</h2>
-            <p class="section-sub"> Honest, self-assessed skill levels based on my Coursera progress and hands-on projects.</p>
-            <div class="skills-grid">
+    <div class="section-inner">
+        <span class="eyebrow">What I Know So Far</span>
+        <h2 class="section-title">Skills</h2>
+        <p class="section-sub">
+            Honest, self-assessed skill levels based on my Coursera progress and hands-on projects.
+        </p>
 
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span class="skill-name">HTML &amp; CSS</span>
-                        <span class="skill-pct">88%</span>
-                    </div>
-                    <div class="skill-track"><div class="skill-bar" data-width="88"></div></div>
-                    <span class="skill-note"> Semantic HTML Flexbox, Grid, responsive layouts</span>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-meta">
-                        <span class="skill-name">JavaScript</span>
-                        <span class="skill-pct">80%</span>
-                    </div>
-                    <div class="skill-track"><div class="skill-bar" data-width="80"></div></div>
-                    <span class="skill-note"> ES6 basics, DOM manipulation, functions, array, event handling</span>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-meta">
-                        <span classes="skill-name">Git &amp; Github</span>
-                        <span class="skill-pct">90%</span>
-                        </div>
-                    <div class="skill-track"><div class="skill-bar" data-width="90"></div></div>
-                    <span class="skill-note">Commits, branches, pull-requests, Version Control flow</span>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-meta">
-                        <span class="skill-name">React</span>
-                        <span class="skill-pct">81%</span>
-                    </div>
-                    <div class="skill-track"><div class="skill-bar" data-width="81"></div></div>
-                    <span class="skill-note">Components, props, useState, hooks, routing</span>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-meta">
-                        <span class="skill-name">Python</span>
-                        <span class="skill-pct">80%</span>
-                    </div>
-                    <div class="skill-track"><div class="skill-bar" data-width="80"></div></div>
-                    <span class="skill-note">Data types, loops, functions, OOP, file handling</span>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-meta">
-                        <span class="skill-name">Problem Solving</span>
-                        <span class="skill-pct">87%</span>
-                    </div>
-                    <div class="skill-track"><div class="skill-bar" data-width="87"></div></div>
-                    <span class="skill-note">Algorithmic thinking, debugging, logical reasoning</span>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <div>
-        <h3>My Photo</h3>
-        <img src="images/profile.jpg" alt="Profile Picture" class="avator-photo" onerror="this.hidden = true; this.nextElementSibling.hidden = false;" />
-        <p class="image-placeholder" hidden>Profile image coming soon.</p>
+        <table class="skills-table">
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Percentage</th>
+                    <th>Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML &amp; CSS</td>
+                    <td>88%</td>
+                    <td>Semantic HTML, Flexbox, Grid and responsive layouts</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>80%</td>
+                    <td>ES6 basics, DOM manipulation, functions, arrays and events</td>
+                </tr>
+                <tr>
+                    <td>Git &amp; GitHub</td>
+                    <td>90%</td>
+                    <td>Commits, branches, pull requests and version control</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>81%</td>
+                    <td>Components, props, useState, hooks and routing</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>80%</td>
+                    <td>Data types, loops, functions, OOP and file handling</td>
+                </tr>
+                <tr>
+                    <td>Problem Solving</td>
+                    <td>87%</td>
+                    <td>Algorithmic thinking, debugging and logical reasoning</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+</section>
+
     <br>
     </main>
-    
 
-     <footer>
-        <div class="footer-inner">
-            <div class="footer-brand">
-                <div class="nav-logo"> T · M · S </div> <!-- DONT FORGET TO MAKE THE TMS A HOME BUTTON-->
-                <div>
-                    <p class="footer-name">Tshepo Marvin Sekobile</p>
-                    <p class="footer-role">Aspiring Software Engineer · Winburg</p>
-                </div>
-                <p class="footer-copy">&#169; 2026 . Built with HTML, CSS &amp; JavaScript. All rights reserved.</p>
+    <footer>
+     <div class="footer-inner">
+         <div class="footer-brand">
+            <div class="nav-logo">T · M · S</div>
+            <div>
+                <p class="footer-name">Tshepo Marvin Sekobile</p>
+                <p class="footer-role">Aspiring Software Engineer · Winburg</p>
             </div>
-        </div>
-    </footer>
+                <p class="footer-copy">
+                    &#169; 2026 · Built with HTML, CSS &amp; JavaScript. All rights reserved.
+                </p>
+         </div>
+     </div>
+</footer>
 </body>
 </html>

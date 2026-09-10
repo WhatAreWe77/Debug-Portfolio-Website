@@ -66,7 +66,6 @@ a {
 .hero img {
     display: block;
     max-width: 100%;
-    margin-top: 24px;
     border-radius: var(--radius);
     border: 1px solid var(--border);
 }
@@ -128,13 +127,24 @@ border-bottom: 1px solid var(--border);
 }
 
 header {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+header:has(.hero) {
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 120px 6% 80px;
-  position: relative;
-  overflow: hidden;
-  background: var(--bg);
+}
+
+header:not(:has(.hero)) {
+  min-height: 0;
+}
+
+header:not(:has(.hero)) + main {
+  padding-top: 72px;
 }
 
 /* grid dot background */
@@ -151,7 +161,28 @@ header::before {
 .hero {
   position: relative;
   z-index: 1;
-  max-width: 680px;
+  width: min(100%, 1080px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
+  gap: clamp(40px, 8vw, 96px);
+  align-items: center;
+}
+
+.hero-content {
+  min-width: 0;
+}
+
+.hero-image {
+  justify-self: end;
+  width: min(100%, 340px);
+}
+
+.hero-image img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-badge {
@@ -450,7 +481,14 @@ header::before {
 }
 .project-card:hover { border-color: var(--blue); transform: translateY(-3px); }
 .project-card.featured { border-color: rgba(99,120,255,0.4); }
-.project-card.coming-soon { opacity: 0.6; }
+.project-card.coming-soon {
+  opacity: 0.92;
+  background-image:
+    linear-gradient(rgba(18, 24, 39, 0.82), rgba(18, 24, 39, 0.92)),
+    url("images/photo-project.jpg");
+  background-position: center;
+  background-size: cover;
+}
 
 .project-top {
   display: flex;
@@ -521,6 +559,21 @@ header::before {
   grid-template-columns: 1fr 1.4fr;
   gap: 60px;
   align-items: start;
+}
+
+.contact-intro {
+  min-width: 0;
+}
+
+.contact-image {
+  width: 190px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  opacity: 0.86;
+  mix-blend-mode: screen;
+  align-self: start;
+  margin-top: 20px;
 }
 
 .contact-left h2 {
@@ -671,6 +724,15 @@ footer {
     .nav-links { display: none; }
     .burger { display: block; }
     .about-grid, .contact-wrap { grid-template-columns: 1fr; }
+    .contact-image { max-width: 190px; }
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    .hero-image {
+        justify-self: start;
+        width: min(100%, 300px);
+    }
     .skills-table { font-size: 0.82rem; }
     .skills-table th,
     .skills-table td { padding: 13px 12px; }

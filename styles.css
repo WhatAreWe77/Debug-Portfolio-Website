@@ -581,7 +581,8 @@ header::before {
   min-width: 0;
 }
 
-.contact-image {
+.contact-image,
+.working-image {
   width: 190px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
@@ -590,6 +591,10 @@ header::before {
   mix-blend-mode: screen;
   align-self: start;
   margin-top: 20px;
+}
+
+.working-image {
+  margin-top: 12px;
 }
 
 .contact-left h2 {
